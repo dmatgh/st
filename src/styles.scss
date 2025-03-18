@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+/* Basic CSS styles for the components */
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background: url('https://images.unsplash.com/photo-1604011399025-f6f0db0cd5a1?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MXx8Y29tcGxldGVseSUyMG1vYmlsaXxlbnwwfDB8fHk%3D') no-repeat center center;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .services-preview {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .service-card img {
+    width: 100%;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

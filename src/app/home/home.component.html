@@ -1,0 +1,27 @@
+<div class="homepage">
+    <section class="hero">
+      <h1>Soluciones técnicas para tu negocio y tu proyecto</h1>
+      <p>Somos una asesoría de ingeniería especializada en brindar soporte técnico y asesoramiento a ingenieros, arquitectos y más...</p>
+      <button (click)="contact()">Solicita asesoramiento gratuito</button>
+    </section>
+  
+    <section class="services-preview">
+      <h2>Servicios Destacados</h2>
+      <div class="service-cards">
+        <div class="service-card" *ngFor="let service of services">
+          <img [src]="service.image" alt="{{ service.name }}">
+          <h3>{{ service.name }}</h3>
+          <p>{{ service.description }}</p>
+          <!--<a [routerLink]="service.link">Ver más</a>-->
+        </div>
+      </div>
+    </section>
+  
+    <section class="video">
+      <h2>¿Cómo podemos ayudarte?</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" [src]="videoUrl" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </div>
+  
