@@ -1,0 +1,142 @@
+/***
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.scroll-element {
+    width: 100%;
+    height: 90vh;
+    background-color: grey;
+}
+
+////////////// video 
+.video-background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen */
+  overflow: hidden;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire container */
+}
+
+
+/* Header Overlay */
+.header-row {
+  display: flex;
+  justify-content: space-around;
+}
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    z-index: 2; /* Places header above the video */
+  }
+  
+  .header-overlay nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-overlay nav ul li {
+    margin: 0 15px;
+  }
+  
+  .header-overlay nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .header-overlay nav ul li a:hover {
+    color: #ff6600; /* Hover effect */
+  }
+
+  /*content overlay*/
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  z-index: 1;
+}
+
+.content-overlay h1 {
+  font-size: 4rem;
+}
+
+.content-overlay p {
+  font-size: 1.5rem;
+}
+
+.content-overlay button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.content-overlay button:hover {
+  background-color: #cc5200;
+}
+
+/* logo and typografy */
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background-color: #ffffff;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #007BFF; /* Blue for trust */
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px; /* Optional: add a symbol or text to represent technical expertise */
+  }
+
+  .logo-text {
+    font-size: 32px;
+    color: #333; /* Dark gray for professional look */
+  }
+
+  .logo-text span {
+    color: #FF6600; /* Orange accent for innovation */
+  }
